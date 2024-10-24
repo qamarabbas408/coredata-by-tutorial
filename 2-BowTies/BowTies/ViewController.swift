@@ -132,9 +132,7 @@ class ViewController: UIViewController {
                bowtie.timesWorn = timesNumber.int32Value
                bowtie.isFavorite = btDict["isFavorite"] as! Bool
                bowtie.url = URL(string: btDict["url"] as! String)
-            
-            
-            
+               
         }
         try? managedContext.save()
     }
